@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset and Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #eee;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    /* Main Content */
+    #content {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Sections */
+    section {
+      margin-bottom: 50px;
+    }
+
+    /* Header styles */
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2.8em;
+    }
+
+    /* About, Projects, Features, etc. */
+    h2 {
+      color: #00ffff;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    /* Features list */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature {
+      background-color: #1e1e1e;
+      padding: 15px;
+      border-radius: 10px;
+      width: 180px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Projects grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .project img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Contact form styles */
+    #contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    #contact-form h3 {
+      margin-bottom: 15px;
+      color: #00ffff;
+      text-align: center;
+    }
+
+    #contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #eee;
+    }
+
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+      outline: none;
+      background-color: #444;
+    }
+
+    #contact-form button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #00ffff;
+      color: #222;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    #contact-form button:hover {
+      background-color: #00cccc;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #222;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p style="max-width:700px; margin:0 auto; text-align:center;">Hello! I'm a passionate Full-Stack Developer with experience in building dynamic and responsive web applications. I love creating clean, efficient code and continuously learning new technologies to improve my craft.</p>
+    </section>
+
+    <!-- Features -->
+    <section id="features">
+      <h2>Key Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Responsive Design</h3>
+          <p>Websites that look great on all devices, from desktops to mobiles.</p>
+        </div>
+        <div class="feature">
+          <h3>Modern Tech Stack</h3>
+          <p>Using React, Node.js, MongoDB, and more to build dynamic apps.</p>
+        </div>
+        <div class="feature">
+          <h3>Clean Code</h3>
+          <p>Maintaining efficient, scalable, and readable codebases.</p>
+        </div>
+        <div class="feature">
+          <h3>Real-Time Updates</h3>
+          <p>Interactive features with WebSockets and APIs.</p>
+        </div>
+        <div class="feature">
+          <h3>Secure & Reliable</h3>
+          <p>Implementing best security practices for safety.</p>
+        </div>
+        <!-- New features start here -->
+        <div class="feature">
+          <h3>Accessibility</h3>
+          <p>Building websites that are accessible to all users, including those with disabilities.</p>
+        </div>
+        <div class="feature">
+          <h3>Performance Optimization</h3>
+          <p>Ensuring fast load times and smooth interactions for users.</p>
+        </div>
+        <div class="feature">
+          <h3>Cross-Browser Compatibility</h3>
+          <p>Ensuring your site works seamlessly across all browsers.</p>
+        </div>
+        <div class="feature">
+          <h3>SEO Friendly</h3>
+          <p>Optimized for search engines to increase visibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Latest Project</h2>
+      <div class="projects-grid">
+        <!-- Example project card -->
+        <div class="project">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Project Screenshot" />
+          <div style="padding:10px;">
+            <h3>Awesome Web App</h3>
+            <p>A full-stack React and Node.js app with real-time features and auth.</p>
+            <a href="#" style="color:#00ffff;">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <h3>Get in Touch</h3>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
