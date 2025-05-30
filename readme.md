@@ -14,7 +14,7 @@
 <table align="center">
   <tr>
     <td align="center" width="45%">
-        <a href="#-my-github-stats--"><img width="100%" src="https://gh-readme-profile.vercel.app/api?username=texora&theme=neon-dark&border_width=0&border_radius=15.2&hide_border=true" alt="texora" /></a>
+<!--         <a href="#-my-github-stats--"><img width="100%" src="https://gh-readme-profile.vercel.app/api?username=texora&theme=neon-dark&border_width=0&border_radius=15.2&hide_border=true" alt="texora" /></a> -->
     </td>
     <td align="center" width="55%">
         <a href="#-my-github-stats--"><img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=texora&theme=2077" alt="texora" /></a>
